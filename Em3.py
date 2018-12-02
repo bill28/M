@@ -103,7 +103,7 @@ settings = {
     "man1":"ตั้งข้อความ",
     "man2":"ตั้งข้อความ",
     "man3":"ตั้งข้อความ",
-    "message":"บัญชีนี้ได้การป้องกัน💢โดย bill&Bot Self ระบบได้ทำการบล็อคคุณอัตโนมัติ\nติดต่อMJ&BOTได้ที่ MJ.KTC",
+    "message":"บัญชีนี้ได้การป้องกัน💢โดย บิวบอท Self ระบบได้ทำการบล็อคคุณอัตโนมัติ\nติดต่https://line.me/ti/p/~b-1642",
     "comment":"Thanks for add me",
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
@@ -628,18 +628,18 @@ def lineBot(op):
                         line.sendMessage(to, mc)              
                 elif text.lower() == '.เทส':
                     ki.sendMessage(to, "Bill&BotSelfยังอยู่ครับ")
-                elif text.lower() == 'ด่า':
-                    line.sendMessage(to, "[[บิวจะด่าแร้วน่ะตะเอง]]")
-                    line.sendMessage(to, "ไอเหี้ย")
-                    line.sendMessage(to, "ไอสัส")
-                    line.sendMessage(to, "ไอชาติหมา")
-                    line.sendMessage(to, "ไอหน้าหี")
-                    line.sendMessage(to, "ไอน่าคางคก")
-                    line.sendMessage(to, "อีดอกทอง")
-                    line.sendMessage(to, "อีส้นตีน")
-                    line.sendMessage(to, "อีน่าหนีงหี")
-                    line.sendMessage(to, "พ่อมึงตาย")
-                    line.sendMessage(to, "แม่มึงตาย")
+                elif text.lower() == 'รัก':
+                    line.sendMessage(to, "[[บิวจะบอกรักน่ะตะเอง]]")
+                    line.sendMessage(to, "รักเบลล์")
+                    line.sendMessage(to, "รักเบลล์")
+                    line.sendMessage(to, "รักเบลล์")
+                    line.sendMessage(to, "รักเบลล์")
+                    line.sendMessage(to, "รักเบลล์")
+                    line.sendMessage(to, "รักเบลล์")
+                    line.sendMessage(to, "รักเบลล์")
+                    line.sendMessage(to, "รักเบลล์")
+                    line.sendMessage(to, "รักเบลล์")
+                    line.sendMessage(to, "รักเบลล์")
                     line.sendMessage(to, " [[บิวด่าเล่นๆน่าตะเอง]]")
                 elif msg.text.lower() == ".ออน":
                     line.sendMessage(msg.to,(str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[1].split(":")[0]+" ชั่วโมง " if "days" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[1].split(":")[0]+" ชั่วโมง " if "day" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(":")[0]+" ชั่วโมง ")+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[1]+" นาที "+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[2]+" วินาที")               
