@@ -23,9 +23,9 @@ line = LINE('')
 line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 
-#ki = LINE()
-#ki.log("Auth Token : " + str(ki.authToken))
-#ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
+ki = LINE()
+ki.log("Auth Token : " + str(ki.authToken))
+ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
 
 #kk = LINE()
 #kk.log("Auth Token : " + str(kk.authToken))
@@ -707,7 +707,7 @@ def lineBot(op):
                     start = time.time()
                     line.sendMessage(msg.to,"ความเร็วอยู่ที่")
                     line.sendMessage(msg.to,str(int(round((time.time() - start) * 1000)))+" ms")
-                elif 'สาวกมา' in text.lower():
+                elif 'คิตตี้' in text.lower():
                     if msg.toType == 2:
                         G = line.getGroup(to)
                         if G.preventedJoinByTicket == False:
@@ -4072,13 +4072,13 @@ def lineBot(op):
                                           line.sendMessage(msg.to, None, contentMetadata={"STKID":"51626512","STKPKGID":"11538","STKVER":"1"}, contentType=7)
                                           break
                 if msg.text in ["ถถ","ถถถ","ถถถถ","ถถถถถ","ถถถถถถ","ถถถถถถถ"]:
-                    line.sendText(msg.to,"มึงพิมเหี้ยไรบิวไม่เข้าไจ")
+                    line.sendText(msg.to,"มึงพิมเหี้ยไรไม่เข้าไจ")
                 if msg.text in ["speed","sp","Speed","สปีด","!speed","/speed"]:
-                    line.sendText(msg.to,"แรงขนาดนี้ บิวนี้ไลค์เลย👍")
+                    line.sendText(msg.to,"แรงขนาดนี้ นี้ไลค์เลย👍")
                 if msg.text in ["กำ","กรรม","กำๆ","กัม","กำแรงๆ","กำำ","กำน่ะ"]:
-                    line.sendText(msg.to,"กำอะไร มากำหำบิวมั้ยอิอิ!!.")
+                    line.sendText(msg.to,"กำอะไร มากำหำกุมั้ยอิอิ!!.")
                 if msg.text in ["555","5555","55555","55+","55++","555+","555++","5555+","5555++"]:
-                    line.sendText(msg.to,"ข่ำเหี้ยไรกัน บิวข่ำด้วยฮ่าๆ😁😀")				
+                    line.sendText(msg.to,"ข่ำเหี้ยไรกัน ข่ำด้วยฮ่าๆ😁😀")				
                 if msg.text in dangerMessage:
                     random.choice(Rfu).kickoutFromGroup(receiver,[sender])
                     random.choice(Rfu).sendText(msg.to,"ตรวจพบคำสั่งของบอทลบกลุ่ม  MJ&BotSelf จำเป็นต้องนำออกเพื่อความปลอดภัยของสมาชิก")										
