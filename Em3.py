@@ -27,13 +27,13 @@ ki = LINE()
 ki.log("Auth Token : " + str(ki.authToken))
 ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
 
-#kk = LINE()
-#kk.log("Auth Token : " + str(kk.authToken))
-#kk.log("Timeline Token : " + str(kk.tl.channelAccessToken))
+kk = LINE()
+kk.log("Auth Token : " + str(kk.authToken))
+kk.log("Timeline Token : " + str(kk.tl.channelAccessToken))
 
-#kc = LINE()
-#kc.log("Auth Token : " + str(kc.authToken))
-#kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
+kc = LINE()
+kc.log("Auth Token : " + str(kc.authToken))
+kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
 
 #ks = LINE()
 #ks.log("Auth Token : " + str(ks.authToken))
@@ -103,7 +103,7 @@ settings = {
     "man1":"ตั้งข้อความ",
     "man2":"ตั้งข้อความ",
     "man3":"ตั้งข้อความ",
-    "message":"บัญชีนี้ได้การป้องกัน💢โดย บิวบอท Self ระบบได้ทำการบล็อคคุณอัตโนมัติ\nติดต่https://line.me/ti/p/~b-1642",
+    "message":"บัญชีนี้ได้การป้องกัน💢โดย บิวบอท Self ระบบได้ทำการบล็อคคุณอัตโนมัติ\nติดต่อhttps://line.me/ti/p/~b-71140",
     "comment":"Thanks for add me",
     "userAgent": [
         "Mozilla/5.0 (X11; U; Linux i586; de; rv:5.0) Gecko/20100101 Firefox/5.0",
@@ -629,18 +629,18 @@ def lineBot(op):
                 elif text.lower() == '.เทส':
                     ki.sendMessage(to, "Bill&BotSelfยังอยู่ครับ")
                 elif text.lower() == 'รัก':
-                    line.sendMessage(to, "[[บิวจะบอกรักน่ะตะเอง]]")
-                    line.sendMessage(to, "รักเบลล์")
-                    line.sendMessage(to, "รักเบลล์")
-                    line.sendMessage(to, "รักเบลล์")
-                    line.sendMessage(to, "รักเบลล์")
-                    line.sendMessage(to, "รักเบลล์")
-                    line.sendMessage(to, "รักเบลล์")
-                    line.sendMessage(to, "รักเบลล์")
-                    line.sendMessage(to, "รักเบลล์")
-                    line.sendMessage(to, "รักเบลล์")
-                    line.sendMessage(to, "รักเบลล์")
-                    line.sendMessage(to, " [[บิวด่าเล่นๆน่าตะเอง]]")
+                    เส้น sendMessage ( to , "[[ตัวเองคาบ]]" )
+                    line.sendMessage(to, "รักบิวมั้ย😍")
+                    line.sendMessage(to, "รักบิวมั้ย😍")
+                    line.sendMessage(to, "รักบิวมั้ย😍")
+                    line.sendMessage(to, "รักบิวมั้ย😍")
+                    line.sendMessage(to, "รักบิวมั้ย😍
+                    line.sendMessage(to, "รักบิวมั้ย😍")
+                    line.sendMessage(to, "รักบิวมั้ย😍
+                    line.sendMessage(to, "รักบิวมั้ย😍")
+                    line.sendMessage(to, "รักบิวมั้ย😍
+                    line.sendMessage(to, "รักบิวมั้ย😍")
+                    line.sendMessage(to, " [[ไหนตอบบิวหน่อยดิ]]")
                 elif msg.text.lower() == ".ออน":
                     line.sendMessage(msg.to,(str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[1].split(":")[0]+" ชั่วโมง " if "days" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[1].split(":")[0]+" ชั่วโมง " if "day" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(":")[0]+" ชั่วโมง ")+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[1]+" นาที "+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[2]+" วินาที")               
                 elif "คท" in msg.text:
@@ -707,7 +707,7 @@ def lineBot(op):
                     start = time.time()
                     line.sendMessage(msg.to,"ความเร็วอยู่ที่")
                     line.sendMessage(msg.to,str(int(round((time.time() - start) * 1000)))+" ms")
-                elif 'คิตตี้' in text.lower():
+                elif 'บุก' in text.lower():
                     if msg.toType == 2:
                         G = line.getGroup(to)
                         if G.preventedJoinByTicket == False:
@@ -729,7 +729,7 @@ def lineBot(op):
                             kc.acceptGroupInvitationByTicket(to, Ti)
                             G.preventedJoinByTicket = True
                             line.updateGroup(G)
-                elif text.lower() == 'กลับได้':
+                elif text.lower() == 'ถอย':
                     if msg.toType == 2:
                         ginfo = line.getGroup(to)
                         try:
@@ -3354,18 +3354,18 @@ def lineBot(op):
                         settings["dblacklist"] = True
                         line.sendMessage(msg.to,"Send Contact")
 #-------------------------------------------------------------------------------
-                elif text.lower() == 'เชคหำ':
+                elif text.lower() == 'เชคเมีย':
                     if msg._from in bot1:
                         if settings["blacklist"] == {}:
-                            line.sendMessage(msg.to,"ไม่พบหำในห้องนี้")
+                            line.sendMessage(msg.to,"ไม่พบเมียในห้องนี้")
                         else:
                             line.sendMessage(msg.to,"โปรดรอ...")
                             num=1
-                            msgs="══════════รายชื่อผู้ที่หำเหม็น═════════"
+                            msgs="══════════รายชื่อผู้ที่เป็นเมีย═════════"
                             for mi_d in settings["blacklist"]:
                                 msgs+="\n[%i] %s" % (num, line.getContact(mi_d).displayName)
                                 num=(num+1)
-                            msgs+="\n══════════รายชื่อผู้หำเหม็น═════════\n\nจำนวน รายชื่อผู้เป็นเมีย :  %i" % len(settings["blacklist"])
+                            msgs+="\n══════════รายชื่อผู้เป็นเมีย═════════\n\nจำนวน รายชื่อผู้เป็นเมีย :  %i" % len(settings["blacklist"])
                             line.sendMessage(msg.to, msgs)
 #=======================================================================================
 
@@ -3780,7 +3780,7 @@ def lineBot(op):
                                        except:
                                            line.sentMessage(msg.to,"สมาชิกทั้งหมดได้รับการเพิ่มแบนแล้ว")
 										   
-                elif 'หำ' in text.lower():
+                elif 'เมีย' in text.lower():
                        targets = []
                        key = eval(msg.contentMetadata["MENTION"])
                        key["MENTIONEES"] [0] ["M"]
@@ -3791,12 +3791,12 @@ def lineBot(op):
                                settings["blacklist"][target] = True
                                f=codecs.open('st2__b.json','w','utf-8')
                                json.dump(settings["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                               line.sendMessage(msg.to,"เพิ่มลงบัญชีดำเรียบร้อย ")
+                               line.sendMessage(msg.to,"เพิ่มลงบัญชีเมียเรียบร้อย ")
                                print ("Banned User")
                            except:
                                line.sendMessage(msg.to,"ไม่พบผู้ติดต่อ")
 
-                elif 'หอย' in text.lower():
+                elif 'เลิกกัน' in text.lower():
                        targets = []
                        key = eval(msg.contentMetadata["MENTION"])
                        key["MENTIONEES"] [0] ["M"]
@@ -3807,19 +3807,19 @@ def lineBot(op):
                                del settings["blacklist"][target]
                                f=codecs.open('st2__b.json','w','utf-8')
                                json.dump(settings["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                               line.sendMessage(msg.to,"แก้หำเหม็นเรียบร้อย...")
+                               line.sendMessage(msg.to,"ปลดออกจากการเป็นเมียเรียบร้อย...")
                                print ("Unbanned User")
                            except:
                                line.sendMessage(msg.to,"ไม่พบผู้ติดต่อ")
                 elif text.lower() == "ไวรัส":
                                 line.sendContact(to, "u010598af074d6d55419609ae63048a60',")
 #-------------------------------------------------------------------------------
-                elif text.lower() == 'ดูหำ':
+                elif text.lower() == 'ดูเมีย':
                     if msg._from in bot1:
                         if settings["blacklist"] == {}:
                             line.sendMessage(msg.to,"Tidak Ada Banlist")
                         else:
-                            line.sendMessage(msg.to,"รายชื่อผู้ที่หำเหม็น")
+                            line.sendMessage(msg.to,"รายชื่อผู้ที่ป็นเมีย")
                             num=1
                             msgs="══════════รายชื่อ Blacklist═════════"
                             for mi_d in settings["blacklist"]:
@@ -3828,7 +3828,7 @@ def lineBot(op):
                             msgs+="\n══════════รายชื่อ Blacklist═════════\n\nTotal Blacklist :  %i" % len(settings["blacklist"])
                             line.sendMessage(msg.to, msgs)
 #=======================================================================================
-                elif msg.text.lower().startswith("urban "):
+                elif msg.text.lower().startswith("หี "):
                     sep = msg.text.split(" ")
                     judul = msg.text.replace(sep[0] + " ","")
                     url = "http://api.urbandictionary.com/v0/define?term="+str(judul)
@@ -4072,13 +4072,13 @@ def lineBot(op):
                                           line.sendMessage(msg.to, None, contentMetadata={"STKID":"51626512","STKPKGID":"11538","STKVER":"1"}, contentType=7)
                                           break
                 if msg.text in ["ถถ","ถถถ","ถถถถ","ถถถถถ","ถถถถถถ","ถถถถถถถ"]:
-                    line.sendText(msg.to,"มึงพิมเหี้ยไรไม่เข้าไจ")
+                    line.sendText(msg.to,"มึงพิมเหี้ยไร บิวไม่เข้าไจ")
                 if msg.text in ["speed","sp","Speed","สปีด","!speed","/speed"]:
-                    line.sendText(msg.to,"แรงขนาดนี้ นี้ไลค์เลย👍")
+                    line.sendText(msg.to,"[ 0.0000000000000001 Seconds ] [ 01 ms ]")
                 if msg.text in ["กำ","กรรม","กำๆ","กัม","กำแรงๆ","กำำ","กำน่ะ"]:
-                    line.sendText(msg.to,"กำอะไร มากำหำกุมั้ยอิอิ!!.")
-                if msg.text in ["555","5555","55555","55+","55++","555+","555++","5555+","5555++"]:
-                    line.sendText(msg.to,"ข่ำเหี้ยไรกัน ข่ำด้วยฮ่าๆ😁😀")				
+                    line.sendText(msg.to,"กำอะไร มากำหำบิวด้น่ะอิอิ")
+                ถ้า ผงชูรส ข้อความ ใน [ "555" , "5555" , "55555" , "55+" , "55 ++" , "555+" , "555 ++" , "5555+" , "5555 ++" มากำ]:
+                    line.sendText(msg.to,"ข่ำเหี้ยไรกัน บิวข่ำด้วยฮ่าๆ😁😀")				
                 if msg.text in dangerMessage:
                     random.choice(Rfu).kickoutFromGroup(receiver,[sender])
                     random.choice(Rfu).sendText(msg.to,"ตรวจพบคำสั่งของบอทลบกลุ่ม  MJ&BotSelf จำเป็นต้องนำออกเพื่อความปลอดภัยของสมาชิก")										
